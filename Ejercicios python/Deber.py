@@ -1,8 +1,8 @@
-# %%
 nombre, apellido, nombreCompleto, pais, ciudad, anio, edad, estaCasado, esVerdadero, luzEncendida = \
 "Sebastián", "Lara", "SebastianAlejandro", "Ecuador", "Quito", 2026, 16, False, True, True
 print (type(nombre))
 print (type(apellido))
+# %%
 print (type(nombreCompleto))
 print (type(pais))
 print (type(ciudad))
@@ -10,10 +10,10 @@ print (type(anio))
 print (type(edad))
 print (type(estaCasado))
 print (type(esVerdadero))
+# %%
 print (type(luzEncendida))
 print (len(nombre))
 print(len(nombre) > len(apellido))
-# %%
 numeroUno, numeroDos = 5, 4
 total = numeroUno + numeroDos
 diferencia = numeroUno - numeroDos
