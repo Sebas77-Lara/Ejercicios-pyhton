@@ -1,35 +1,26 @@
-nombre, apellido, nombreCompleto, pais, ciudad, anio, edad, estaCasado, esVerdadero, luzEncendida = \
-"Sebastián", "Lara", "SebastianAlejandro", "Ecuador", "Quito", 2026, 16, False, True, True
-print (type(nombre))
-print (type(apellido))
-print (type(nombreCompleto))
-print (type(pais))
-print (type(ciudad))
-print (type(anio))
-print (type(edad))
-print (type(estaCasado))
-print (type(esVerdadero))
-print (type(luzEncendida))
-print (len(nombre))
-print(len(nombre) > len(apellido))
-numeroUno, numeroDos = 5, 4
-total = numeroUno + numeroDos
-diferencia = numeroUno - numeroDos
-producto = numeroUno * numeroDos
-division = numeroUno / numeroDos
-residuo = numeroDos % numeroUno
-potencia = numeroUno ** numeroDos
-divisionEntera = numeroUno // numeroDos
-radio, pi = 30, 3.1416
-areaCirculo = pi * radio ** 2
-circunferenciaCirculo = 2 * pi * radio
-print(areaCirculo)
-print(circunferenciaCirculo)
-radio = float(input("Ingresa el radio: "))
-area = pi * radio ** 2
-print("Área:", area)
-nombre = input("Nombre: ")
-apellido = input("Apellido: ")
-pais = input("País: ")
-edad = int(input("Edad: "))
-help('keywords')
+#Actividad 1
+print("la suma es:", 3+4)
+print("la resta es:", 3-4)
+print("la multiplicaion es:", 3*4)
+print("el modulo es:", 3%4)
+print("la divicion es:",3/4) 
+print("la evansevantaja es:", 3**4)
+print("la operacion de division de suelo es:", 3//4)
+
+#actividad 2
+
+print("Mi nombre es: Sebastián")
+print("Mi apellido es: Lara")
+print("Mi pais es Ecuador")
+print("estoy disfruntado de 30 dias de python")
+
+#actividad 3
+
+print(type(10)) 
+print(type(9.8))
+print(type(3.14))
+print(type(4-4j))
+print(type(("Asabeneh","Python", "finland")))
+print(type("Sebastián"))
+print(type("Lara"))
+print(type("Ecuador "))
