@@ -2,7 +2,6 @@ nombre, apellido, nombreCompleto, pais, ciudad, anio, edad, estaCasado, esVerdad
 "Sebastián", "Lara", "SebastianAlejandro", "Ecuador", "Quito", 2026, 16, False, True, True
 print (type(nombre))
 print (type(apellido))
-# %%
 print (type(nombreCompleto))
 print (type(pais))
 print (type(ciudad))
@@ -10,7 +9,6 @@ print (type(anio))
 print (type(edad))
 print (type(estaCasado))
 print (type(esVerdadero))
-# %%
 print (type(luzEncendida))
 print (len(nombre))
 print(len(nombre) > len(apellido))
@@ -35,3 +33,4 @@ apellido = input("Apellido: ")
 pais = input("País: ")
 edad = int(input("Edad: "))
 help('keywords')
+
