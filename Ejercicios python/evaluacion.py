@@ -78,3 +78,32 @@ print(frase_reemplazada)
 palabras = frase.split()
 print(palabras)
 
+# ===== PARTE C =====
+# 1. Solicite al usuario: Nombre, apellido, país, ancho de la pared, alto de la pared, precio por metro cuadrado
+# Calcule: área de la pared, costo total estimado
+# 2. Cree la variable nombre_completo.
+# 1. Muestre un reporte final que incluya:
+# nombre completo, país, área calculada, costo total (La impresión del reporte final debe
+# realizarse usando f-strings.)
+# 3. Muestre además:
+# nombre_completo en mayúsculas
+# la longitud de nombre_completo
+# si la letra "a" está presente en nombre_completo
+# si el costo total es mayor que 100 
+
+nombre = input("Ingrese su nombre: ")
+apellido = input("Ingrese su apellido: ")
+pais = input("Ingrese su país: ")
+ancho_pared = float(input("Ingrese el ancho de la pared en metros: "))
+alto_pared = float(input("Ingrese el alto de la pared en metros: "))
+precio_metro_cuadrado = float(input("Ingrese el precio por metro cuadrado: "))
+area_pared = ancho_pared * alto_pared
+costo_total = area_pared * precio_metro_cuadrado
+nombre_completo = f"{nombre} {apellido}"
+print (f"Reporte Final:\nNombre Completo: {nombre_completo}\nPaís: {pais}\nÁrea Calculada: {area_pared} metros cuadrados\nCosto Total: {costo_total}")
+print(nombre_completo.upper())
+print(len(nombre_completo))
+print("a" in nombre_completo)
+if costo_total > 100:
+    print("El costo total es si es mayor que 100.")
+else:    print("El costo total no es mayor que 100.")
