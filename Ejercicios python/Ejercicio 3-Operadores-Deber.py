@@ -70,14 +70,3 @@ print("Tu edad en segundos es: ", segundos)
 #18
 for i in range(1, 6):
     print(i, 1, i, i**2, i**3)
-
-
-
-
-
-
-
-
-
-
-
