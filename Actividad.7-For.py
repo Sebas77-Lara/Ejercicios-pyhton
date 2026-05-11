@@ -8,7 +8,7 @@ promedio = suma / len(numbers)
 languaje = "Sebas Lara"
 for letter in languaje:
     print("a")
-'''
+
 
 a = input("Ingrese palabra: ")
 vocales= 0 
@@ -20,3 +20,19 @@ for x in a:
         consonantes = consonantes + 1
 print ("El numero de vocales es : ", vocales)
 print ("Y el numero de consonantes es de: ", consonantes)
+
+companies = {"Facebook", "Google", "Facebook", "Amazon"}
+for me in companies:
+    print (me)
+    if companies == "Facebook":
+    
+    
+number = [ 1, 2, 3, 4, 5]
+x = int(input("Ingrese num: "))
+for y in number:
+    if y == x:
+        print ("Ganaste")
+        break
+else:
+    print("perdiste")
+'''
