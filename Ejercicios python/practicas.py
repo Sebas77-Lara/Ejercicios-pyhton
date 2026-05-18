@@ -4,3 +4,4 @@ print(len(nombre))
 print("Sebas" in nombre)
 nombre1 = input("Ingrese su nombre: ")
 print(nombre1[0])
+jola
