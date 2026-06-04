@@ -1,0 +1,58 @@
+# Ejercicio 2: Menú de calificaciones
+#Crea un programa en Python que solicite al usuario tres calificaciones de un estudiante. 
+# Luego, muestra un menú que permita realizar las siguientes operaciones:
+"""Calcular el promedio
+Mostrar la nota mayor
+Mostrar la nota menor
+Determinar si el estudiante aprueba o reprueba
+Cada operación debe realizarse en una función diferente y cada función debe devolver el resultado usando return."""
+
+def calcular_promedio(calificaciones):
+    return sum(calificaciones) / len(calificaciones)
+
+def mostrar_nota_mayor(calificaciones):
+    return max(calificaciones)
+
+def mostrar_nota_menor(calificaciones):
+    return min(calificaciones)
+
+def determinar_aprobacion(calificaciones):
+    promedio = calcular_promedio(calificaciones)
+    if promedio >= 70:
+        return "Aprobado"
+    else:
+        return "Reprobado"
+
+def main():
+    calificaciones = []
+    for i in range(3):
+        calificacion = float(input(f"Ingrese la calificación {i+1}: "))
+        calificaciones.append(calificacion)
+
+    while True:
+        print("Menú de opciones:")
+        print("1. Calcular el promedio")
+        print("2. Mostrar la nota mayor")
+        print("3. Mostrar la nota menor")
+        print("4. Determinar si el estudiante aprueba o reprueba")
+        print("5. Salir")
+
+        opcion = input("Seleccione una opción: ")
+
+        if opcion == '1':
+            promedio = calcular_promedio(calificaciones)
+            print(f"El promedio es: {promedio}  ")
+        elif opcion == '2':
+            nota_mayor = mostrar_nota_mayor(calificaciones)
+            print(f"La nota mayor es: {nota_mayor}")
+        elif opcion == '3':
+            nota_menor = mostrar_nota_menor(calificaciones)
+            print(f"La nota menor es: {nota_menor}")
+        elif opcion == '4':
+            resultado = determinar_aprobacion(calificaciones)
+            print(f"El estudiante está: {resultado}")
+        elif opcion == '5':
+            print("Saliendo del programa.")
+            break
+        else:
+            print("Opción no válida. Por favor, seleccione una opción del menú.")  
