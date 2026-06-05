@@ -1,0 +1,39 @@
+def saludar(nombre):  
+
+    print(f"Hola {nombre}") 
+
+saludar ("sebas") 
+
+ 
+
+def mostrar_estudiante(nombre, curso): 
+
+    print("==DATOS DEL ESTUDIANTE ==") 
+
+    print(f"Nombre: {nombre} ") 
+
+    print(f"Curso: {curso}") 
+
+  
+
+nombre_usuario = input("Ingrese el nombre del estudiante: ") 
+
+curso_usuario = input("Ingrese el curso del usuario") 
+
+mostrar_estudiante(nombre_usuario, curso_usuario) 
+
+·Ejercicio 2
+
+Def generate_full_name() : 
+
+First_name = "Sebas" 
+
+Last_name = "Lara" 
+
+Space = " " 
+
+Full_name = fisrt_name + space + last_name 
+
+Generate_full_name() 
+
+ 
