@@ -1,0 +1,111 @@
+Ejercicio en clase:  
+
+ 
+
+x = input("Ingresa cualquier mensaje: ") 
+
+nombre = input("Ingrese su nombre: ") 
+
+apellido = input ("Ingrese su apellido: ") 
+
+  
+
+def obtener_mensaje(x): 
+
+    mensaje = x 
+
+    return mensaje 
+
+  
+
+def generar_nombre_completo(nombre, apellido): 
+
+    nombre_completo = (f"{nombre}  {apellido}") 
+
+    return nombre_completo 
+
+  
+
+  
+
+print(f"{obtener_mensaje(x)}, {generar_nombre_completo(nombre, apellido)}") 
+
+ 
+
+ 
+
+Ejercicio 2: (Calculadora) 
+
+def suma(a, b): 
+
+    return a + b 
+
+  
+
+def resta(a, b): 
+
+    return a - b 
+
+  
+
+def multiplicar(a, b): 
+
+    return a * b 
+
+  
+
+def dividir(a, b): 
+
+    return a / b 
+
+     
+
+while 1==1: 
+
+    numero1 = float(input("Ingrese número 1: ")) 
+
+    numero2 = float(input("Ingrese número 2: ")) 
+
+    operacion = input("Ingrese qué tipo de operación quiere realizar (suma, resta, multiplicar, dividir, o salir): ") 
+
+  
+
+    if operacion == "suma": 
+
+        print(suma(numero1, numero2)) 
+
+  
+
+    elif operacion == "resta": 
+
+        print(resta(numero1, numero2)) 
+
+  
+
+    elif operacion == "multiplicar": 
+
+        print(multiplicar(numero1, numero2)) 
+
+  
+
+    elif operacion == "dividir": 
+
+        if numero2 != 0: 
+
+            print(dividir(numero1, numero2)) 
+
+        else: 
+
+            print("No se puede dividir por cero.") 
+
+  
+
+    elif operacion == "salir": 
+
+        break 
+
+  
+
+    else: 
+
+        print("Operación no válida.") 
