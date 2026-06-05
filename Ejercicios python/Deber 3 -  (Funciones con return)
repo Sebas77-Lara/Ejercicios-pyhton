@@ -10,11 +10,21 @@ Cada operación debe realizarse en una función diferente y cada función debe d
 def calcular_promedio(calificaciones):
     return sum(calificaciones) / len(calificaciones)
 
-def mostrar_nota_mayor(calificaciones):
-    return max(calificaciones)
-
-def mostrar_nota_menor(calificaciones):
-    return min(calificaciones)
+def nota_mayor(n1, n2, n3):
+    if n1 >= n2 and n1 >= n3:
+        return n1
+    elif n2 >= n1 and n2 >= n3:
+        return n2
+    else:
+        return n3
+ 
+def nota_menor(n1, n2, n3):
+    if n1 <= n2 and n1 <= n3:
+        return n1
+    elif n2 <= n1 and n2 <= n3:
+        return n2
+    else:
+        return n3
 
 def determinar_aprobacion(calificaciones):
     promedio = calcular_promedio(calificaciones)
